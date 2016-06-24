@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yangtianrui.ticketmanagement.view.GuestActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar_guest"
+        style="@style/AppTheme.ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/id_tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_toolbar_guest"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="欢迎你" />
+
+    <!--
+        GridView 基本属性
+        android:numColumns="auto_fit" 列数设置为自动
+        android:columnWidth="90dp"，  每列的宽度，也就是Item的宽度
+        android:stretchMode="columnWidth"  缩放与列宽大小同步
+        android:verticalSpacing="10dp" 垂直边距
+        android:horizontalSpacing="10dp"水平边距
+    -->
+    <GridView
+        android:id="@+id/id_gv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:padding="16dp"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+</RelativeLayout>

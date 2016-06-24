@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_add_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/input_edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_add_starting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/input_edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_add_ending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/input_edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/input_edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_add_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/input_edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/id_btn_flight_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spalsh_btn"
+        android:text="确定" />
+</LinearLayout>

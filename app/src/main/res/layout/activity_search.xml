@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yangtianrui.ticketmanagement.view.SearchActivity">
+
+    <include layout="@layout/activity_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/id_et_search_starting"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input_edittext"
+                android:hint="起点"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/id_et_search_ending"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/input_edittext"
+                android:hint="终点"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/id_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="查询" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/id_lv_found_flight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:padding="10dp" />
+
+</LinearLayout>

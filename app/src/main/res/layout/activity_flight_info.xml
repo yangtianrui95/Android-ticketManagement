@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yangtianrui.ticketmanagement.view.FlightInfoActivity">
+
+    <include layout="@layout/activity_base" />
+
+    <ListView
+        android:id="@+id/id_lv_flights_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_toolbar_base"
+        android:padding="16dp" />
+
+</RelativeLayout>
